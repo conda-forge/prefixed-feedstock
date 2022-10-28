@@ -1,5 +1,5 @@
 {% set name = "prefixed" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca48277ba5fa8346dd4b760847da930c7b84416387c39e93affef086add2c029
+  sha256: cf96b056f98ab9ba615d0311eca837b3da012015cdc594f3fee248caf70228b7
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license_family: MOZILLA
   license_file: LICENSE
   summary: Prefixed alternative numeric library
-  
+
 extra:
   recipe-maintainers:
     - fcollonval
