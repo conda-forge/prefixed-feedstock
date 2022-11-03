@@ -1,5 +1,5 @@
 {% set name = "prefixed" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf96b056f98ab9ba615d0311eca837b3da012015cdc594f3fee248caf70228b7
+  sha256: 44a0c21c962670fb246f24cdca5789f2dcface17340f563df91308ff747c9d22
 
 build:
   noarch: python
